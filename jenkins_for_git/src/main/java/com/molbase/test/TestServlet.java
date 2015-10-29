@@ -12,8 +12,11 @@ public class TestServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
+			
 		resp.getWriter().println("this is from helloworld");
 		resp.getWriter().flush();
+		
+		
 	}
 
 	@Override
@@ -23,8 +26,4 @@ public class TestServlet extends HttpServlet {
 		super.doPost(req, resp);
 	}
 
-	
-	
-	
-	
 }
